@@ -54,6 +54,18 @@ public class Main {
         }return counter;
     }
 
+    public static int oddNumsSum(int[] randInts){
+        int sum = 0;
+
+        for(int i = 0; i <randInts.length; i++){
+            if (randInts[i] % 2 != 0){
+                sum += randInts[i];
+            }
+        }return sum;
+    }
+
+
+
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(randInts()));
