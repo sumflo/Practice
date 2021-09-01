@@ -54,6 +54,18 @@ public class Main {
         }return counter;
     }
 
+    public static int oddNumsSum(int[] randInts){
+        int sum = 0;
+
+        for(int i = 0; i <randInts.length; i++){
+            if (randInts[i] % 2 != 0){
+                sum += randInts[i];
+            }
+        }return sum;
+    }
+
+
+
     public static int evenNumsSum(int[] randInts){
         int sum = 0;
 
@@ -72,6 +84,5 @@ public class Main {
         System.out.println(randMin(randInts()));
         System.out.println(oddNums(randInts()));
         System.out.println(evenNums(randInts()));
-        System.out.println(evenNumsSum(randInts()));
     }
 }
