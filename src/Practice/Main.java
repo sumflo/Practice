@@ -14,9 +14,19 @@ public class Main {
         return randInts;
     }
 
+    public static int randMax(int[] randInts){
+        int max = randInts[0];
+
+        for(int i =0; i <randInts.length; i++){
+            if (max < randInts[i]){
+                max = randInts[i];
+            }
+        }return max;
+    }
+
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(randInts()));
-
+        System.out.println(randMax(randInts()));
     }
 }
