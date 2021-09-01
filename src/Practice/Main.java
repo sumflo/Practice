@@ -17,11 +17,21 @@ public class Main {
     public static int randMax(int[] randInts){
         int max = randInts[0];
 
-        for(int i =0; i <randInts.length; i++){
+        for(int i = 0; i <randInts.length; i++){
             if (max < randInts[i]){
                 max = randInts[i];
             }
         }return max;
+    }
+
+    public static int randMin(int[] randInts){
+        int min = randInts[0];
+
+        for(int i = 0; i <randInts.length; i++){
+            if (min > randInts[i]){
+                min = randInts[i];
+            }
+        }return min;
     }
 
     public static void main(String[] args) {
