@@ -34,9 +34,20 @@ public class Main {
         }return min;
     }
 
+    public static int oddNums(int[] randInts){
+        int counter = 0;
+
+        for(int i = 0; i <randInts.length; i++){
+            if (randInts[i] % 2 != 0){
+                counter++;
+            }
+        }return counter;
+    }
+
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(randInts()));
         System.out.println(randMax(randInts()));
+        System.out.println(oddNums(randInts()));
     }
 }
